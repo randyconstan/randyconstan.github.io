@@ -28,9 +28,14 @@
 <script>
 
 function playAudio() {
+document.getElementById("myAudio1").src = "";
+document.getElementById("myAudio2").src = "";
+document.getElementById("myAudio3").src = "";
+document.getElementById("myAudio4").src = "";
+document.getElementById("myAudio5").src = "";
 switch ((Math.floor(Math.random() * 5) + 1)) {
   case 1:
-	document.getElementById("myAudio2").src = "";
+	document.getElementById("myAudio1").src = "";
 	document.getElementById("myAudio1").src = "https://cdn.jsdelivr.net/gh/randyconstan/randyconstan.github.io@main/1.mp3";
 	document.getElementById("myAudio1").pause();
 	document.getElementById("myAudio1").currentTime = 0;
@@ -46,7 +51,7 @@ switch ((Math.floor(Math.random() * 5) + 1)) {
     document.getElementById("demo").innerHTML = "Building up the tension...";
     break;
   case 3:
-  	document.getElementById("myAudio2").src = "";
+  	document.getElementById("myAudio3").src = "";
 	document.getElementById("myAudio3").src = "https://cdn.jsdelivr.net/gh/randyconstan/randyconstan.github.io@main/3.mp3";
 	document.getElementById("myAudio3").pause();
 	document.getElementById("myAudio3").currentTime = 0;
@@ -54,7 +59,7 @@ switch ((Math.floor(Math.random() * 5) + 1)) {
     document.getElementById("demo").innerHTML = "Double I tell ya...";
     break;
   case 4:
-  	document.getElementById("myAudio2").src = "";
+  	document.getElementById("myAudio4").src = "";
 	document.getElementById("myAudio4").src = "https://cdn.jsdelivr.net/gh/randyconstan/randyconstan.github.io@main/4.mp3";
 	document.getElementById("myAudio4").pause();
 	document.getElementById("myAudio4").currentTime = 0;
@@ -62,7 +67,7 @@ switch ((Math.floor(Math.random() * 5) + 1)) {
     document.getElementById("demo").innerHTML = "Building up the tension...";
     break;
   case 5:
-  	document.getElementById("myAudio2").src = "";
+  	document.getElementById("myAudio5").src = "";
 	document.getElementById("myAudio5").src = "https://cdn.jsdelivr.net/gh/randyconstan/randyconstan.github.io@main/5.mp3";
 	document.getElementById("myAudio5").pause();
 	document.getElementById("myAudio5").currentTime = 0;
